@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:text="点击选择接入方式"
+        android:textSize="20dp" />
+
+    <Button android:id="@+id/icbcpay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="接入工银e支付"
+        android:layout_marginTop="40dp"/>
+
+    <Button android:id="@+id/wxpay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="接入微信支付"
+        android:layout_marginTop="20dp"/>
+    <Button android:id="@+id/alipay_test"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="接入支付宝(沙箱)"
+        android:layout_marginTop="20dp"/>
+    <Button android:id="@+id/alipay_release"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="接入支付宝(正式)"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>

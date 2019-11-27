@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.testpaysdk.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/interfaceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="接口名称:"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/edit_interfaceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/interfaceName"
+                android:text="ICBC_WAPB_THIRD"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/interfaceVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_interfaceName"
+                android:text="接口版本号:"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/edit_interfaceVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/interfaceVersion"
+                android:text="1.0.0.0"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tranData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_interfaceVersion"
+                android:layout_marginTop="20dp"
+                android:text="接口数据:" />
+
+            <EditText
+                android:id="@+id/edit_tranData"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tranData"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/MerSignMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_tranData"
+                android:text="签名数据:" />
+
+            <EditText
+                android:id="@+id/edit_MerSignMsg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/MerSignMsg"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/MerCert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_MerSignMsg"
+                android:text="证书数据:" />
+
+            <EditText
+                android:id="@+id/edit_MerCert"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/MerCert"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/WXappid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_MerCert"
+                android:text="微信appid:" />
+
+            <EditText
+                android:id="@+id/edit_WXappid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/WXappid"
+                android:text="wxaee85f9c565a49cc" />
+
+            <Button
+                android:id="@+id/pay_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_WXappid"
+                android:background="@android:color/holo_red_dark"
+                android:text="去支付"></Button>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

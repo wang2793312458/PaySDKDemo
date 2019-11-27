@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="TestServerIP">
+        <item></item>
+        <item>https://b2c3.dccnet.com.cn</item>
+        <item>https://b2c4.dccnet.com.cn</item>
+        <item>https://b2c2.dccnet.com.cn</item>
+        <item>https://b2c1.dccnet.com.cn</item>
+    </string-array>
+
+</resources>
